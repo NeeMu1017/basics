@@ -1,0 +1,23 @@
+span{
+    color: red;
+    display: none;
+}
+
+
+input:invalid~ span{
+    display: block;
+}
+
+.container2{
+    height: 500px;
+    border :solid 1px rgba(0, 0, 0, 0.537);
+    border-radius: 2%;
+    margin: 90px;
+    padding: 50px;
+    width: 700px;
+}
+.alin_item{
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,0 +1,8 @@
+.buttonn{
+    background-color: rgba(0, 0, 255, 0.307);
+    border:  none;
+    height: 100px;
+    width:170px ;
+    margin: 50px 40px;
+    border-radius: 15px;
+}

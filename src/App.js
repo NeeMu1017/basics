@@ -4,7 +4,7 @@ import Routess from './Routess/Routess';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Routess/>
     </div>
   );
