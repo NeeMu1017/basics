@@ -3,6 +3,7 @@ import styles from "./Home.module.css"
 import Navbar from '../Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
 
+
 const Home = () => {
   let navig = useNavigate();
   return (
@@ -36,7 +37,7 @@ const Home = () => {
 
       </div>
 
-
+      
     </div>
   )
 }
