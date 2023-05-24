@@ -8,6 +8,7 @@ const Tableget = () => {
     const [photos, setPhotos] = useState([])
     const [currrentpage, setCurrentPage] = useState(1);
     const [postPerPage] = useState(40)
+    const [search,setSearch] =useState('');
     useEffect(() => {
         axios.get("https://jsonplaceholder.typicode.com/comments")
             .then((res) => { setPhotos(res.data) })
@@ -25,6 +26,12 @@ const Tableget = () => {
         <div>
             <Navbar/>
             <div>
+                <div className="container">
+                <input type="text"
+                onChange={(e)=>{setSearch(e.target.value)}}
+                className='form-control m-3'
+                />
+                </div> 
                 <table className='table'>
                     <thead>
                         <tr>
@@ -34,7 +41,10 @@ const Tableget = () => {
                     </thead>
                     <tbody>
                         {
-                            currentpost.map(e => (  
+                            currentpost.filter((e)=>{
+                                return search.toLowerCase() === " " ? e : 
+                                e.name.toLowerCase().includes(search)
+                            }).map(e => (  
                                 <tr key={e.id}>
                                     <td>{e.id}</td>
                                     <td>{e.name}</td>

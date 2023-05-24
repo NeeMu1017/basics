@@ -19,7 +19,7 @@ const Home = () => {
           <button className={styles.buttonn} onClick={() => navig('/from2')}>Html css From</button>
           </div>
           <div className="col-2">
-          <button className={styles.buttonn} onClick={() => navig('/from3')}>REDUX From</button>
+          <button className={styles.buttonn} onClick={() => navig('/form3')}>Formik and yup From</button>
           </div>
         </div>
       </div>
@@ -28,15 +28,17 @@ const Home = () => {
         <div className='col-2'>
           <button className={styles.buttonn} onClick={() => navig('/tableget')}>Table Get Methode</button>
         </div>
-        <div className='col-2'>
-          <button className={styles.buttonn} onClick={() => navig('/tableget')}>Table Put Methode</button>
-        </div>
-        <div className='col-2'>
-          <button className={styles.buttonn} onClick={() => navig('/tableget')}>Table Post Methode</button>
-        </div>
+       
 
       </div>
-
+      <div className="row">
+        <h2>Pagitaion </h2>
+        <div className='col-2'>
+          Normal pagitaion use Bootstrap
+          <button className={styles.buttonn} onClick={() => navig('/tableget')}>Pagination</button>
+          <button className={styles.buttonn} onClick={() => navig('/tableget')}>Pagination PrimeReact</button>
+        </div>
+      </div>
       
     </div>
   )

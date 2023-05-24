@@ -17,7 +17,7 @@ const Fromtwo = () => {
       id: 1,
       placeholder: "username",
       name: "username",
-      type: "text",
+      type: "text", 
       label: "Username",
       pattern: "^[A-Za-z0-9]{3,16}$",
       value : formdata.username,
@@ -32,6 +32,7 @@ const Fromtwo = () => {
       type: "email",
       label: "Email",
       value : formdata.email,
+    
       required: "ture",
       errormess: 'It should be a valid email address!'
     },
@@ -42,7 +43,7 @@ const Fromtwo = () => {
       type: "password",
       value : formdata.password,
       label: "Password",
-      pattern: '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$',
+      pattern: '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,100}$',
       required: "ture",
       errormess: "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!"
     }
@@ -60,6 +61,7 @@ const Fromtwo = () => {
   return (
     <div>
       <Navbar />
+      
       <div className='d-flex justify-center '>
         <div className="container ">
           <h4 className='text-center'>Form using HTML and css</h4>
@@ -69,6 +71,7 @@ const Fromtwo = () => {
                 <div>
                   <label > {i.label}</label>
                   <input key={i.id}
+                    
                     placeholder={i.placeholder}
                     type={i.type}
                     pattern={i.pattern}
@@ -77,9 +80,7 @@ const Fromtwo = () => {
                     required={i.required}
                     className='form-control'
                     onChange={changehandle}
-                    onBlur={()=>setFocuse(true)}
-                    
-                    
+                    onBlur={()=>setFocuse(true)}            
                   />
                   <span>{i.errormess}</span>
                 </div>
