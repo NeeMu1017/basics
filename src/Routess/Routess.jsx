@@ -5,6 +5,7 @@ import Form from '../componts/React/From/Form'
 import Formthree from '../componts/React/From/Formthree'
 import Fromtwo from '../componts/React/From/Fromtwo'
 import Tableget from '../componts/React/table/tableget/Tableget'
+import Todo from '../componts/React/Todo/Todo'
 
 
 const Routess = () => {
@@ -19,7 +20,7 @@ const Routess = () => {
                     <Route path='from' element={<Form/>}></Route>
                     <Route path='from2' element={<Fromtwo/>}></Route>
                     <Route path="form3" element={<Formthree/>}></Route>
-                    
+                    <Route path='todo' element={<Todo/>}></Route>
                     <Route path='tableget' element={<Tableget/>}></Route>
                     
                 </Routes>

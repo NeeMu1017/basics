@@ -45,7 +45,7 @@ const Formthree = () => {
             <input type="text"
               className='form-control'
               name='name'
-              id='name'
+              
               onBlur={formik.handleBlur}
               onInput={formik.handleChange}
               value={formik.values.name}

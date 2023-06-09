@@ -28,8 +28,9 @@ const Home = () => {
         <div className='col-2'>
           <button className={styles.buttonn} onClick={() => navig('/tableget')}>Table Get Methode</button>
         </div>
-       
-
+        <div className='col-2'>
+          <button className={styles.buttonn} onClick={()=>navig("/todo")}>Todo</button>
+        </div>
       </div>
       <div className="row">
         <h2>Pagitaion </h2>
